@@ -29,7 +29,7 @@ app.use("/api/v1/analytics", require("./routes/analyticsRoutes"));
 app.use("/api/v1/admin", require("./routes/adminRoutes"));
 
 //static folder
-app.use(express.static(path.join(__dirname+'./client/build')));
+app.use(express.static(path.join(__dirname+'/client/build')));
 
 //static routes
 app.get('*',function(req,res){
